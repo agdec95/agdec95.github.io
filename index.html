@@ -1,19 +1,54 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Amy de Castro</title>
+    <meta charset="UTF-8">
+    <title>Amy de Castro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;   /* vertically aligns image and text */
+            max-width: 800px;
+        }
+
+        .headshot {
+            width: 140px;          /* adjust size here */
+            height: auto;
+            border-radius: 50%;    /* circular headshot */
+            margin-right: 30px;
+        }
+
+        .text {
+            font-size: 18px;
+        }
+
+        .text a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1>Amy de Castro</h1>
 
-<p>I am a postdoc at the University of Utah working with Akil Narayan.</p>
+    <div class="container">
+        <!-- Replace with your actual image filename -->
+        <img src="IMG_1012.jpg" alt="Headshot" class="headshot">
 
-  <img src="IMG_1012.jpg" alt="My image">
+        <div class="text">
+            <p><strong>I am a postdoc at the University of Utah</strong></p>
 
-    <p>
-        <a href="de_Castro_CV.pdf" target="_blank">
-            Open my PDF
-        </a>
-    </p>
+            <!-- Replace with your actual PDF filename -->
+            <a href="de_Castro_CV.pdf" target="_blank">
+                My CV is available here.
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
+
